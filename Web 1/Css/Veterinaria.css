@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Newsreader-Regular;
+    src: url(../Fonts/Newsreader_24pt-Regular.ttf);
+}
+:root {
+    --primary-color: rgb(254, 250, 223);
+    --secondary-color: rgb(42, 163, 174);
+    --third-color: rgb(235, 113, 121);
+    --fourth-color: rgb(134, 210, 205);
+}
+body{
+    display: block;
+    padding-top: 0%;
+    margin: 0%;
+    
+}
+.veterinaria_header {
+    margin-top: 0px;
+    padding-left: 80px;
+    display: inline-flex;
+    background-color: var(--fourth-color);
+    width: 100%;
+    height: 180px;
+}
+.vet_logo{
+    width: 180px;
+    height: 180px;
+}
+.main_div {
+    display: inline-flex;
+    align-items: center;
+    justify-items:space-around;
+}
+.nav_div {
+    margin-right: 50px;
+    width: 250px;
+}
+.pestañas-ul {
+    font-family: Newsreader-Regular;
+    font-size: 1.2rem;
+    list-style-type: none;
+    text-align: center;
+}
+.pestaña {
+    border: 2px solid var(--secondary-color);
+    margin: 5px 2px 0px 0px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+.pestaña:hover{
+    border-color: var(--third-color);
+    color: var(--third-color);
+}
+.pestaña_link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.pestaña_link:hover{
+    color: var(--third-color);
+}
+.form {
+    padding-left: 200px;
+    width: 700px;
+}
+.txtNit {
+    width:100%;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid var(--secondary-color); 
+    outline:none;
+}
+.txtRazonSocial {
+    width:100%;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid var(--secondary-color); 
+    outline:none;
+}
+.txtDireccion {
+    width:100%;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid var(--secondary-color); 
+    outline:none;
+}
+.txtTelefono {
+    width:100%;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid var(--secondary-color); 
+    outline:none;
+}
+.email {
+    width:100%;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid var(--secondary-color); 
+    outline:none;
+}
+.empleados {
+    width:100%;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid var(--secondary-color); 
+    outline:none;
+}
+.date {
+    width:100%;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid var(--secondary-color); 
+    outline:none;
+}
+.txtNit::placeholder{
+    color: var(--fourth-color);
+    font-size: 1rem;
+}
+.txtRazonSocial::placeholder{
+    color: var(--fourth-color);
+    font-size: 1rem;
+}
+.txtDireccion::placeholder{
+    color: var(--fourth-color);
+    font-size: 1rem;
+}
+.txtTelefono::placeholder{
+    color: var(--fourth-color);
+    font-size: 1rem;
+}
+.email::placeholder{
+    color: var(--fourth-color);
+    font-size: 1rem;
+}
+.empleados::placeholder{
+    color: var(--fourth-color);
+    font-size: 1rem;
+}
+footer {
+    background-color: var(--fourth-color);
+    color: var(--primary-color);
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    
+}
