@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/index.css">
+    <script type="text/javascript" src="../Js/index.js"></script>
     <link rel="icon" href="../Images/vet_favicon.png" type="imagen/x-icon" >
     <title>vet_web</title>
 </head>
@@ -13,11 +14,11 @@
             <img src="../Images/0.png" alt="vet logo" class="vet_logo" >
         </div>
         <div class="login_div">
-            <input class="user_index" type="text" placeholder="Usuario">
-            <input class="password_index" type="password" placeholder="Password" >
+            <input class="user_index" id="user" type="text" placeholder="Usuario">
+            <input class="password_index" id="password" type="password" placeholder="Password" >
         </div>
         <div class="login_button_div">
-            <button type="submit" class="login_button">Ingresar</button>
+            <button type="submit" class="login_button" onclick="Saludo()">Ingresar</button>
         </div>
     </header>
     <main>
@@ -35,6 +36,8 @@
             </div>
             <div class="txtWelcome">
                 <h1>BIENVENIDO A NUESTRA VETERINARIA</h1>
+                <button onclick="Suma()">Sumar</button>
+                <input type="text" name="txtResultado" id="txtResultado" disabled>
             </div>
         </div>    
     </main>
