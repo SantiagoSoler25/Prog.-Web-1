@@ -2,6 +2,9 @@
     font-family: Newsreader-Regular;
     src: url(../Fonts/Newsreader_24pt-Regular.ttf);
 }
+* {
+    box-sizing: border-box;
+}
 :root {
     --primary-color: rgb(254, 250, 223);
     --secondary-color: rgb(42, 163, 174);
@@ -10,7 +13,7 @@
 }
 body{
     display: block;
-    padding-top: 0%;
+    padding: 0%;
     margin: 0%;
     
 }
@@ -137,11 +140,14 @@ body{
     font-size: 1rem;
 }
 footer {
-    background-color: var(--fourth-color);
-    color: var(--primary-color);
     margin-top: 50px;
+    width: 100%;
     padding: 20px;
     text-align: center;
+    display: inline-flex;
     justify-content: center;
+    background-color: var(--fourth-color);
+    color: var(--primary-color);
     
 }
+
