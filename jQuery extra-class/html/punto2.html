@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UL</title>
+    <script>
+        function OcultarElemento1() {
+            var lista1 = document.querySelector('.lista1');
+            var lista2 = document.querySelector('.lista2');
+            if (lista1.firstElementChild) {
+                lista1.removeChild(lista1.firstElementChild);
+            }
+            if (lista2.firstElementChild) {
+                lista2.removeChild(lista2.firstElementChild);
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <div>
+        <h4>Lista 1:</h4>
+        <ul class="lista1">
+            <li class="li_1">Tortilla</li>
+            <li class="li">Jamon</li>
+            <li class="li">Queso</li>
+        </ul>
+        <ul class="lista2">
+            <li>Coca Cola</li>
+            <li>Leche</li>
+            <li>Té</li>
+        </ul>
+        <button onclick="OcultarElemento1()">Eliminar primer elemento</button>
+    </div>
+</body>
+</html>

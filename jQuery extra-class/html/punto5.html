@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cambiar Texto</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let toggle = true;
+            $('.cambiarBtn').click(function() {
+                if (toggle) {
+                    $('.div').html('<b><i>Hola Mundo 2</i></b>');
+                } else {
+                    $('.div').html('<b><i>Hola Mundo 1</i></b>');
+                }
+                toggle = !toggle;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="div"><b><i>Hola Mundo 1</i></b></div>
+    <button class="cambiarBtn">Cambiar</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ocultar Imagen</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#OcultarBtn').click(function() {
+                $('#img').toggle();
+                if (!$('#img').is(':visible')) {
+                    $('#text').text('I Love jQuery');
+                } else {
+                    $('#text').text('I');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="text">I</div>
+    <img id="img" src="../Images/images1.jpeg" alt="Imagen">
+    <br>
+    <button id="OcultarBtn">Ocultar/Mostrar Imagen</button>
+</body>
+</html>

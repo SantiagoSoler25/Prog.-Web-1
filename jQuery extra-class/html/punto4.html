@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.btn').hover(
+                function() {
+                    alert('El cursor esta sobre el botón');
+                },
+                function() {
+                    alert('El cursor ya no esta sobre el botón');
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+    <button class="btn">Pasa el ratón por este botón</button>
+</body>
+</html>
