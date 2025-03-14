@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/Veterinaria.css">
     <link rel="icon" href="../Images/vet_favicon.png">
+    <script type="text/javascript" src="../Js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../Js/eventos.js"></script>
     <title>vet_web</title>
 </head>
 <body>
@@ -28,13 +30,13 @@
             </div>
             <div class="form">
                 <div class="nit_div">
-                    <label for="txtNit" >
-                        <input type="text" class="txtNit" name="txtNit" id="txtNit" placeholder="NIT">
+                    <label for="txtNit">
+                        <input type="text" class="txtNit" name="txtNit" id="txtNit" placeholder="NIT" onblur="validarNit()">
                     </label>
                 </div>
                 <div class="razonSocial_div">
                     <label for="txtRazonSocial">
-                        <input type="text" class="txtRazonSocial" name="txtRazonSocial" id="txtRazonSocial" placeholder="Razón Social">
+                        <input type="text" class="txtRazonSocial" name="txtRazonSocial" id="txtRazonSocial" placeholder="Razón Social" onblur="validarRazonSocial()">
                     </label>
                 </div>
                 <div class="direccion_div">
@@ -61,6 +63,9 @@
                     <label for="date" >
                         <input type="date" class="date" name="date" id="date" placeholder="Fecha de Fundación">
                     </label>
+                </div>
+                <div>
+                    <button onclick="validarNit()">Enviar</button>
                 </div>
             </div>
         </div>

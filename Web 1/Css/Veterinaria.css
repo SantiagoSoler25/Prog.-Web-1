@@ -17,6 +17,11 @@ body{
     margin: 0%;
     
 }
+.error {
+    background-color: #f57c76 !important;
+}
+
+
 .veterinaria_header {
     margin-top: 0px;
     padding-left: 80px;
