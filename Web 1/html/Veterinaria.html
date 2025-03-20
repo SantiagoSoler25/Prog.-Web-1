@@ -41,17 +41,17 @@
                 </div>
                 <div class="direccion_div">
                     <label for="txtDireccion">
-                        <input type="text" class="txtDireccion" name="txtDireccion" id="txtDireccion" placeholder="Dirección">
+                        <input type="text" class="txtDireccion" name="txtDireccion" id="txtDireccion" placeholder="Dirección" onblur="validarDireccion()">
                     </label>
                 </div>
                 <div class="telefono_div">
                     <label for="txtTelefono" >
-                        <input type="text" class="txtTelefono" name="txtTelefono" id="txtTelefono" placeholder="Teléfono">
+                        <input type="text" class="txtTelefono" name="txtTelefono" id="txtTelefono" placeholder="Teléfono"onblur="validarTelefono()">
                     </label>
                 </div>
                 <div class="email_div">
                     <label for="email_div" >
-                        <input type="email" class="email" name="email" id="email" placeholder="Email">
+                        <input type="email" class="email" name="email" id="email" placeholder="Email" onblur="validarEmail()">
                     </label>
                 </div>
                 <div class="empleados_div">
@@ -61,11 +61,11 @@
                 </div>
                 <div class="date_div">
                     <label for="date" >
-                        <input type="date" class="date" name="date" id="date" placeholder="Fecha de Fundación">
+                        <input type="text" class="date" name="date" id="date" placeholder="mm/dd/yyyy" onblur="validarDate()">
                     </label>
                 </div>
                 <div>
-                    <button onclick="validarNit()">Enviar</button>
+                    <button class="button" onclick="validarFormulario()">Enviar</button>
                 </div>
             </div>
         </div>
