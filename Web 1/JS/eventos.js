@@ -77,3 +77,54 @@ function validarFormulario() {
     }
 }
 
+//funcion para guardar los datos del formulario
+
+var veterinarias = new Array();
+
+function guardarFormulario() {
+    var veterinaria = new Object();
+    veterinaria.nit = $("#txtNit").val();
+    veterinaria.razon = $("#txtRazonSocial").val();
+    veterinaria.direccion = $("#txtDireccion").val();
+    veterinaria.telefono = $("#txtTelefono").val();
+    veterinaria.email = $("#email").val();
+    veterinaria.date = $("#date").val();
+    veterinarias.push(veterinaria);
+
+    mostrarVeterinarias();
+    limpiarFormulario();
+}
+function limpiarFormulario() {
+    $("#txtNit").val("");
+    $("#txtRazonSocial").val("");
+    $("#txtDireccion").val("");
+    $("#txtTelefono").val("");
+    $("#email").val("");
+    $("#date").val("");
+}
+function mostrarVeterinarias() {
+
+
+    var tabla = "<table border='1'>";
+    tabla += "<tr>";
+    tabla += "<th>NIT</th>";
+    tabla += "<th>Razon Social</th>";
+    tabla += "<th>Direccion</th>";
+    tabla += "<th>Telefono</th>";
+    tabla += "<th>Email</th>";
+    tabla += "<th>Fecha</th>";
+    tabla += "</tr>";
+    $()
+    for (var i = 0; i < veterinarias.length; i++) {
+        tabla += "<tr>";
+        tabla += "<td>" + veterinarias[i].nit + "</td>";
+        tabla += "<td>" + veterinarias[i].razon + "</td>";
+        tabla += "<td>" + veterinarias[i].direccion + "</td>";
+        tabla += "<td>" + veterinarias[i].telefono + "</td>";
+        tabla += "<td>" + veterinarias[i].email + "</td>";
+        tabla += "<td>" + veterinarias[i].date + "</td>";
+        tabla += "</tr>";
+    }
+    tabla += "</table>";
+    $("#resultado").html(tabla);
+}
