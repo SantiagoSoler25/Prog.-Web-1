@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Medicos.css">
+    <script type="text/javascript" src="../JS/Medicos.js"></script>
+    <link rel="icon" href="../Images/vet_favicon.png" type="imagen/x-icon">
+    <!-- <link rel="stylesheet" href="../Materialize/css/materialize.min.css"> -->
+    <title>vet_web</title>
+</head>
+<body>
+    <header class="medico_header ">
+        <div class="vet_logo_div">
+            <img src="../Images/0.png" alt="vet logo" class="vet_logo" >
+        </div>
+        <div class="login_div">
+            <input class="user_login" id="user" type="text" placeholder="Usuario">
+            <input class="password_login" id="password" type="password" placeholder="Password" >
+        </div>
+        <div class="login_button_div">
+            <button type="submit" class="login_button" onclick="Saludo()">Ingresar</button>
+        </div>
+    </header>
+    <main class="main_div">
+        <div class="nav_div">
+            <nav class="pestañas">
+                <ul class="pestañas-ul">
+                    <a target="_blank" class="pestaña_link" href="../html/Inicio.html"><li class="pestaña">Inicio</li></a>
+                    <a target="_self" class="pestaña_link" href="../html/Veterinaria.html"><li class="pestaña">Veterinaria</li></a>
+                    <a target="_blank" class="pestaña_link" href="../html/Medicos.html"><li class="pestaña">Medicos</li></a>
+                    <a target="_blank" class="pestaña_link" href="../html/Citas.html"><li class="pestaña">Citas</li></a>
+                    <a target="_blank" class="pestaña_link" href="../html/Medicamentos.html"><li class="pestaña">Medicamentos</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="form">
+            <div class="nit_div">
+                <input type="text" class="txtCedula" name="txtCedula" id="txtCedula" placeholder="Cedula">
+                <label for="txtCedula">Cédula</label>
+            </div>
+            <div class="name_div">
+                <input type="text" name="txtName" id="txtName" class="txtName" placeholder="Nombre">
+                <label for="txtName">Nombre</label>
+            </div>
+            <div class="lastname_div">
+                <input type="text" name="txtLastname" id="txtLastname" class="txtLastname" placeholder="Apellido">
+                <label for="">Apellidos</label>
+            </div>
+            <div class="direccion_div">
+                <input type="text" name="txtDireccion" class="txtDireccion" id="txtDireccion" placeholder="Dirección">
+                <label for="txtDireccion">Dirección</label>
+            </div>
+            <div class="telefono_div">
+                <input type="text" name="txtTelefono" class="txtTelefono" id="txtTelefono" placeholder="Teléfono">
+                <label for="txtTelefono">Teléfono</label>
+            </div>
+            <div class="email_div">
+                <input type="email" name="email" class="email" id="email" placeholder="Email">
+                <label for="email">Email</label>
+            </div>
+            <div class="date_div">
+                <input type="text" name="date" class="date" id="date" placeholder="Fecha de Nacimiento">
+                <label for=""></label>
+            </div>
+            <div class="gender_div">
+                <p>Género</p>
+                <p>
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        <span>Masculino</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="text" name="gender" value="female">
+                        <span>Femenino</span>
+                    </label>
+                </p>
+            </div>
+            <div>
+                <button class="button">Enviar</button>
+            </div>
+        </div>
+    </main> 
+</body>
+</html>

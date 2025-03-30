@@ -1,22 +1,9 @@
 @font-face {
-    font-family: Finlandica-Italic;
-    src: url(../Fonts/Finlandica-Italic.ttf);
-}
-@font-face {
-    font-family: Finlandica-Regular;
-    src: url(../Fonts/Finlandica-Regular.ttf);
-}
-@font-face {
-    font-family: Lobster-Regular;
-    src: url(../Fonts/Lobster-Regular.ttf);
-}
-@font-face {
-    font-family: Poppins-Regular;
-    src: url(../Fonts/Poppins-Regular.ttf);
-}
-@font-face {
     font-family: Newsreader-Regular;
     src: url(../Fonts/Newsreader_24pt-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
 }
 :root {
     --primary-color: rgb(254, 250, 223);
@@ -26,13 +13,16 @@
 }
 body{
     display: block;
-    padding-top: 0%;
+    padding: 0%;
     margin: 0%;
     
 }
-
-.index_header {
+/*.error {
+    background-color: #f57c76 !important;
+}*/
+.medico_header {
     margin-top: 0px;
+    /* padding-left: 80px; */
     display: inline-flex;
     justify-content: space-around;
     background-color: var(--fourth-color);
@@ -43,12 +33,25 @@ body{
     width: 180px;
     height: 180px;
 }
-.login_div {
+.login_div{
     display: grid;
     margin-left: 0px;
     padding: 20px;
 }
-.user_login {
+.user_login{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    background-color: var(--fourth-color);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid var(--primary-color);
+    width: 350px;
+    outline: none;
+
+    
+}
+.password_login{
     font-size: 1.2rem;
     color: var(--primary-color);
     background-color: var(--fourth-color);
@@ -59,16 +62,6 @@ body{
     width: 350px;
     outline: none;
 }
-.password_login {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    background-color: var(--fourth-color);
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 2px solid var(--primary-color);
-    outline: none;
-}
 .user_login::placeholder{
     color: var(--primary-color);
     font-size: 1.2rem;
@@ -76,10 +69,6 @@ body{
 .password_login::placeholder{
     color: var(--primary-color);
     font-size: 1.2rem;
-}
-.login_button_div{
-    display: block;
-    align-content: center;
 }
 .login_button{
     font-size: 1.2rem;
@@ -96,51 +85,4 @@ body{
     background-color: var(--third-color);
     border: 1px solid var(--third-color);
     border-radius: 30px;
-}
-.main_div {
-    display: inline-flex;
-    align-items: center;
-    justify-items:center;
-}
-.nav_div {
-    margin-right: 50px;
-    width: 250px;
-}
-.pestañas-ul {
-    font-family: Newsreader-Regular;
-    font-size: 1.2rem;
-    list-style-type: none;
-    text-align: center;
-}
-.pestaña {
-    border: 2px solid var(--secondary-color);
-    margin: 5px 2px 0px 0px;
-    height: 30px;
-    padding-top: 5px;
-    border-radius: 15px;
-}
-.pestaña:hover{
-    border-color: var(--third-color);
-    color: var(--third-color);
-}
-.pestaña_link {
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-.pestaña_link:hover{
-    color: var(--third-color);
-}
-.txtWelcome {
-    font-family: Poppins-Regular;
-    width: 65%;
-    font-size: 2.3rem;
-    color: var(--fourth-color);
-}
-footer {
-    background-color: var(--fourth-color);
-    color: var(--primary-color);
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-    
 }

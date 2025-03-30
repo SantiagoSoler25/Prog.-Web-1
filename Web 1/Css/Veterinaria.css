@@ -24,8 +24,9 @@ body{
 
 .veterinaria_header {
     margin-top: 0px;
-    padding-left: 80px;
+    /* padding-left: 80px; */
     display: inline-flex;
+    justify-content: space-around;
     background-color: var(--fourth-color);
     width: 100%;
     height: 180px;
@@ -33,6 +34,59 @@ body{
 .vet_logo{
     width: 180px;
     height: 180px;
+}
+.login_div{
+    display: grid;
+    margin-left: 0px;
+    padding: 20px;
+}
+.user_login{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    background-color: var(--fourth-color);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid var(--primary-color);
+    width: 350px;
+    outline: none;
+
+    
+}
+.password_login{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    background-color: var(--fourth-color);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid var(--primary-color);
+    width: 350px;
+    outline: none;
+}
+.user_login::placeholder{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+.password_login::placeholder{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+.login_button{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    width: 120px;
+    height: 60px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+}
+.login_button:hover{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border: 1px solid var(--third-color);
+    border-radius: 30px;
 }
 .main_div {
     display: inline-flex;
