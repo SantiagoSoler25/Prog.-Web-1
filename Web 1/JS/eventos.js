@@ -102,29 +102,3 @@ function limpiarFormulario() {
     $("#email").val("");
     $("#date").val("");
 }
-function mostrarVeterinarias() {
-
-
-    var tabla = "<table border='1'>";
-    tabla += "<tr>";
-    tabla += "<th>NIT</th>";
-    tabla += "<th>Razon Social</th>";
-    tabla += "<th>Direccion</th>";
-    tabla += "<th>Telefono</th>";
-    tabla += "<th>Email</th>";
-    tabla += "<th>Fecha</th>";
-    tabla += "</tr>";
-    $()
-    for (var i = 0; i < veterinarias.length; i++) {
-        tabla += "<tr>";
-        tabla += "<td>" + veterinarias[i].nit + "</td>";
-        tabla += "<td>" + veterinarias[i].razon + "</td>";
-        tabla += "<td>" + veterinarias[i].direccion + "</td>";
-        tabla += "<td>" + veterinarias[i].telefono + "</td>";
-        tabla += "<td>" + veterinarias[i].email + "</td>";
-        tabla += "<td>" + veterinarias[i].date + "</td>";
-        tabla += "</tr>";
-    }
-    tabla += "</table>";
-    $("#resultado").html(tabla);
-}

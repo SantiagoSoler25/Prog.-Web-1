@@ -86,3 +86,40 @@ body{
     border: 1px solid var(--third-color);
     border-radius: 30px;
 }
+.main_div {
+    display: inline-flex;
+    align-items: center;
+    justify-items:space-around;
+}
+.nav_div {
+    margin-right: 50px;
+    width: 250px;
+}
+.pestañas-ul {
+    font-family: Newsreader-Regular;
+    font-size: 1.2rem;
+    list-style-type: none;
+    text-align: center;
+}
+.pestaña {
+    border: 2px solid var(--secondary-color);
+    margin: 5px 2px 0px 0px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+.pestaña:hover{
+    border-color: var(--third-color);
+    color: var(--third-color);
+}
+.pestaña_link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.pestaña_link:hover{
+    color: var(--third-color);
+}
+.form {
+    padding-left: 200px;
+    width: 950px;
+}

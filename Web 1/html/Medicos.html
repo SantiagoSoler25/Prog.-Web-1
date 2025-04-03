@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/vet_favicon.png" type="imagen/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../Materialize/css/materialize.min.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="../Materialize/js/materialize.min.js"></script>
     <link rel="stylesheet" href="../Css/Medicos.css">
     <script type="text/javascript" src="../JS/Medicos.js"></script>
-    <link rel="icon" href="../Images/vet_favicon.png" type="imagen/x-icon">
+    
     <!-- <link rel="stylesheet" href="../Materialize/css/materialize.min.css"> -->
     <title>vet_web</title>
 </head>
@@ -34,54 +39,93 @@
                 </ul>
             </nav>
         </div>
-        <div class="form">
-            <div class="nit_div">
-                <input type="text" class="txtCedula" name="txtCedula" id="txtCedula" placeholder="Cedula">
-                <label for="txtCedula">Cédula</label>
+        <form >
+            <div class="form container">
+                <div class="cedula_div input-field">
+                    <input type="text" class="txtCedula" name="txtCedula" id="txtCedula" >
+                    <label for="txtCedula">Cédula</label>
+                </div>
+                <div class="row">
+                    <div class=" name_div input-field col s6">
+                      <input  id="name" type="text" class="txtName" >
+                      <label for="first_name">Nombre</label>
+                    </div>
+                    <div class="lastname_div input-field col s6">
+                      <input id="last_name" type="text" class="txtLastname">
+                      <label for="last_name">Apellidos</label>
+                    </div>
+                  </div>
+                
+                <div class="direccion_div input-field">
+                    <input type="text" name="txtDireccion" class="txtDireccion" id="txtDireccion" >
+                    <label for="txtDireccion">Dirección</label>
+                </div>
+                <div class="telefono_div input-field">
+                    <input type="text" name="txtTelefono" class="txtTelefono" id="txtTelefono" >
+                    <label for="txtTelefono">Teléfono</label>
+                </div>
+                <div class="email_div input-field">
+                    <input type="email" name="email" class="email" id="email" >
+                    <label for="email">Email</label>
+             </div>
+                <div class="date_div input-field">
+                    <input type="text" name="date" class="date datepicker" id="date" placeholder="Fecha de Nacimiento">
+                    <label for="date"></label>
+                </div>
+                <div class="gender_div input-field">
+                    <p>Género</p>
+                    <p>
+                        <label>
+                          <input class="with-gap" name="group3" type="radio" value="male"/>
+                          <span>Masculino</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                          <input class="with-gap" name="group3" type="radio" value="female"/>
+                          <span>Femenino</span>
+                        </label>
+                      </p>
+
+                </div>
+                <div class="twocontainer">
+                    <div class="card-panel">
+                        <span class="card-title">Lugar de Nacimiento</span>
+                  
+                        <div class="row">
+            <!-- País -->
+                            <div class="input-field col s12 m4">
+                                <select id="pais">
+                                    <option value="" disabled selected>Selecciona un país</option>
+                                    <option value="mx">México</option>
+                                    <option value="co">Colombia</option>
+                                </select>
+                                <label for="pais">País</label>
+                            </div>
+
+            <!-- Departamento -->
+                            <div class="input-field col s12 m4">
+                                <select id="departamento">
+                                    <option value="" disabled selected>Selecciona un departamento</option>
+                                </select>
+                                <label for="departamento">Departamento</label>
+                            </div>
+
+            <!-- Municipio -->
+                            <div class="input-field col s12 m4">
+                                <select id="municipio">
+                                    <option value="" disabled selected>Selecciona un municipio</option>
+                                </select>
+                                <label for="municipio">Municipio</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="button">Enviar</button>
+                </div>
             </div>
-            <div class="name_div">
-                <input type="text" name="txtName" id="txtName" class="txtName" placeholder="Nombre">
-                <label for="txtName">Nombre</label>
-            </div>
-            <div class="lastname_div">
-                <input type="text" name="txtLastname" id="txtLastname" class="txtLastname" placeholder="Apellido">
-                <label for="">Apellidos</label>
-            </div>
-            <div class="direccion_div">
-                <input type="text" name="txtDireccion" class="txtDireccion" id="txtDireccion" placeholder="Dirección">
-                <label for="txtDireccion">Dirección</label>
-            </div>
-            <div class="telefono_div">
-                <input type="text" name="txtTelefono" class="txtTelefono" id="txtTelefono" placeholder="Teléfono">
-                <label for="txtTelefono">Teléfono</label>
-            </div>
-            <div class="email_div">
-                <input type="email" name="email" class="email" id="email" placeholder="Email">
-                <label for="email">Email</label>
-            </div>
-            <div class="date_div">
-                <input type="text" name="date" class="date" id="date" placeholder="Fecha de Nacimiento">
-                <label for=""></label>
-            </div>
-            <div class="gender_div">
-                <p>Género</p>
-                <p>
-                    <label>
-                        <input type="radio" name="gender" value="male">
-                        <span>Masculino</span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input type="text" name="gender" value="female">
-                        <span>Femenino</span>
-                    </label>
-                </p>
-            </div>
-            <div>
-                <button class="button">Enviar</button>
-            </div>
-        </div>
+        </form>
     </main> 
 </body>
 </html>
